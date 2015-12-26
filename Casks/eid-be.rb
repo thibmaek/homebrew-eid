@@ -1,4 +1,4 @@
-cask :v1 => 'eid-be' do
+cask 'eid-be' do
   version '4.1.5'
   sha256 '1ac58ad4ef9668f0634f7648df79aed41b47789059fa5af29c0e7617b1545f2c'
 
