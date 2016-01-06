@@ -1,4 +1,4 @@
-cask 'eparakstitajs' do
+cask 'eid-lv' do
   version :latest
   sha256 :no_check
 
