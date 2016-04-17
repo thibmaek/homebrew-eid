@@ -10,7 +10,7 @@ cask 'eid-be' do
 
   pkg 'beidbuild-signed.pkg'
 
-  uninstall :pkgutil => 'be.eid.middleware'
+  uninstall pkgutil: 'be.eid.middleware'
 
   caveats <<-EOS.undent
     #{token} requires Java. You can install the latest version with
