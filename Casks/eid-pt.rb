@@ -11,5 +11,5 @@ cask 'eid-pt' do
 
   pkg 'Cartao_de_Cidadao.pkg'
 
-  uninstall :script => '/usr/local/bin/pteid_uninstall.sh'
+  uninstall script: '/usr/local/bin/pteid_uninstall.sh'
 end
