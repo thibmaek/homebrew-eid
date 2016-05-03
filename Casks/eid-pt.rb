@@ -1,8 +1,8 @@
 cask 'eid-pt' do
-  version '1.26.2-1389'
-  sha256 '28b2adf148451590dc73c991251798f3676ae784b176651f4f911ecf46a61e4f'
+  version :latest
+  sha256 :no_check
 
-  url "https://www.cartaodecidadao.pt/ccsoftware/Cartao_de_Cidadao_#{version}_LION_MOUNTAIN_LION_MAVERICKS.dmg"
+  url 'https://www.cartaodecidadao.pt/ccsoftware/Cartao_de_Cidadao.pkg'
   name 'Cartão de Cidadão'
   name 'Electronic identity card software for Portugal'
   name 'eID Portugal'
