@@ -1,18 +1,20 @@
 cask 'eid-be' do
-  version '4.1.5'
-  sha256 '1ac58ad4ef9668f0634f7648df79aed41b47789059fa5af29c0e7617b1545f2c'
+  version '4.1.18'
+  sha256 'bc5068841bfd42e2686b940268a55c1c6d08b98b2b08e65c9fac8ef1c8dcd245'
 
-  url "https://downloads.services.belgium.be/eid/beidbuild-#{version.delete('.')}.dmg"
+  url "https://downloads.services.belgium.be/eid/eID-Quickinstaller-#{version}.dmg"
   name 'Electronic identity card software of Belgium'
-  name 'eID Belgium'
+  name 'eID Belgium Quickinstaller'
   homepage 'http://eid.belgium.be/'
 
-  pkg 'beidbuild-signed.pkg'
+  pkg 'eID-Quickinstaller-signed.pkg'
 
-  uninstall pkgutil: 'be.eid.middleware'
+  uninstall pkgutil: [
+                       'be.eid.middleware',
+                       'be.eid.viewer.app',
+                     ]
 
-  caveats <<-EOS.undent
-    #{token} requires Java. You can install the latest version with
-      brew cask install java
-  EOS
+  caveats do
+    depends_on_java
+  end
 end
