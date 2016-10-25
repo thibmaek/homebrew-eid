@@ -11,6 +11,8 @@ cask 'eid-be-viewer' do
 
   pkg 'eidviewer-signed.pkg'
 
+  uninstall pkgutil: 'be.eid.viewer.app'
+
   caveats do
     depends_on_java
   end

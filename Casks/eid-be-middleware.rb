@@ -1,4 +1,4 @@
-cask 'eid-be-middleware.rb' do
+cask 'eid-be-middleware' do
   version '4.1.18'
   sha256 '06b8f821eecd6652db257c3e92ccce30b199b240e8ddd6b21f7119df716f90b3'
 
